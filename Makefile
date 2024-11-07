@@ -1,12 +1,10 @@
-all: funcA
-funcA: main.o funcA.o
-	g++ -g -Wall main.o funcA.o -o funcA.elf
+all: FuncA
+FuncA: main.o FuncA.o
+	g++ -g -Wall main.o FuncA.o -o FuncA.elf
 main.o: main.cpp
 	g++ -g -Wall -c main.cpp
-funcA.o: funcA.cpp funcA.h
-	g++ -g -Wall -c funcA.cpp
+FuncA.o: FuncA.cpp FuncA.h
+	g++ -g -Wall -c FuncA.cpp
 clean:
 	rm -rf -v *.o
 	rm -rf -v *.gch
-
-
