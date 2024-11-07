@@ -1,11 +1,14 @@
 #ifndef FUNCA_H
 #define FUNCA_H
-class funcA{
-	public:
-	funcA();
-	virtual ~funcA() {}
-	double Calculate();
-};
-#endif 
 
+class FuncA {
+public:
+    
+    double calculateTrigFunction(double x);
+    
+private:
+    double bernoulli(int index); 
+};
+
+#endif 
 
